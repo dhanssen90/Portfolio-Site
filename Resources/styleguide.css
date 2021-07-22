@@ -10,8 +10,10 @@ body{ background-color: #F0A202;
 }
 
 header{
-    display:flex;
+    display: inline-block;
     position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .container{
@@ -49,11 +51,11 @@ h3{
 
 /* Navigation Bar */
 
-.nav-ul{
+ul{
     list-style-type: none;
 }
 
-.nav-li{
+li{
     display: inline;
     float: left;
 }
@@ -143,6 +145,7 @@ h3{
 
 .logo{
     float:left;
+    position:relative
 }
 
 .about-me{
@@ -160,6 +163,10 @@ grid-column-start: 2;
 .margin1{
     margin-top: 200px;
     grid-column-start: 2;
+}
+
+.margin2{
+margin-bottom:50px;
 }
 
 /*Screen Larger than 600px 3-Col*/
