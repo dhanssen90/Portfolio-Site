@@ -15,6 +15,10 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
+    border: 3px none;
+    border-radius: 1em;
+    background-color: #F18805;
 }
 
 .container{
@@ -57,12 +61,15 @@ ul{
 }
 
 li{
-    display: inline;
+    display: block;
     float: left;
     margin-left: 50px;
+    padding: 30px;
   }
 
-  
+li:hover  {
+    background-color: #0E9594;
+}
 /* ~~Format & Layout~~ */
 
 /*Grid Rules*/
@@ -131,7 +138,6 @@ li{
     clear:both;
 }
 
-
 .Imagee{  
     outline:4px solid #F18805;
     outline-offset:-100px;
@@ -141,7 +147,8 @@ li{
 
 .logo{
     float:left;
-    position:relative
+    position: relative;
+    margin-left: 100px;
 }
 
 .about-me{
@@ -152,17 +159,17 @@ grid-column-start: 2;
 /* Page Margins */
 
 .margin{
-    margin-top:400px;
+    margin-top:300px;
     grid-column-start: 2;
 }
 
 .margin1{
-    margin-top: 200px;
+    margin-top: 100px;
     grid-column-start: 2;
 }
 
 .margin2{
-margin-bottom:50px;
+margin-bottom:80px;
 }
 
 /*Screen Larger than 600px 3-Col*/
