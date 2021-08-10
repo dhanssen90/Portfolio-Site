@@ -62,6 +62,10 @@ li{
 li:hover  {
     background-color: #0E9594;
 }
+
+.header{
+    justify-content: center;
+}
 /* ~~Format & Layout~~ */
 
 /*Grid Rules*/
@@ -195,9 +199,14 @@ margin-bottom:80px;
     #parallax-text{  max-width: 100%;
         height: auto;
         font-size: 100%;}
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%; 
+        }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
     .container{grid-template-columns: 25% 50% 25%;}
     .sub-item-a{border-style: none;}
     img{ 
@@ -218,6 +227,12 @@ margin-bottom:80px;
     #parallax-text{  max-width: 100%;
             height: auto;
             font-size: 100%;}
+    .column {
+            -ms-flex: 50%;
+            flex: 50%;
+             max-width: 50%;
+            }
+          
 }
 
 /* Image galleries for the alternative pages */
@@ -247,7 +262,7 @@ margin-bottom:80px;
     -ms-flex: 33%; /* IE10 */
     flex: 33%;
     max-width: 33%;
-    padding: 0 4px;
+    padding: 0 3px;
   }
   
   .column img {
@@ -256,17 +271,35 @@ margin-bottom:80px;
     width: 100%;
   }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
+/* Contact Page rules*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;}
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .contact-container {
+      margin-top: 75px;
+    border-radius: 5px;
+    background-color: #F0A202;
+    padding: 20px;
+  }
