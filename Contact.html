@@ -5,53 +5,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel='stylesheet' href="Resources/styleguide.css">
-    <link rel='Normalize' href="Resources/Normalize.css">
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/png" href="/Resources/Images/Fav/favicon-32x32.png" />
+    <link rel='Normalize' href="Resources\css\Normalize.css">
+    <link rel="stylesheet" href="Resources\css\responsive.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img class="logo" src="Resources/Images/Untitled-3.png" alt="Dan Creates">
-            <ul>
-                <li><a href='work.html'> Work</a></li>
-                <li><a href='../Portfolio2/Contact.html'> Contact</a> </li>
-                <li><a href='packages'> Packages</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="header">
 
-    <main>
-        <h3>Contact Form</h3>
+        <div id="normal-header">
+            <a href="Index.html" id="image-link"><img src="Resources/Images/Untitled-3.png" alt="dancreates logo"
+                    id="header-img" /></a>
 
-        <div class="contact-container">
-            <form action="/action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
+            <nav id="nav-bar">
+                <ul>
+                    <li class="nav-link" id="menu-item"><a href="CommercialWork.html" class="menu-link"> Work </a></li>
+                    <li class="nav-link" id="menu-item"><a href="Contact.html" class="menu-link"> Contact </a>
+                    </li>
+                    <li class="nav-link" id="menu-item"><a href="#presentation-container" class="menu-link"> Products
+                        </a></li>
+                    <li class="nav-link" id="menu-item"><a href="videos.html" class="menu-link"> Media </a>
+                    </li>
+                    <li class="nav-link" id="menu-item"><a href="#prices-section-container" class="menu-link"> Pricing
+                        </a>
+                    <li>
+                </ul>
+            </nav>
         </div>
 
+
+        <div id="responsive-header">
+            <div id="responsive-logo-button">
+                <a href="Index.html" id="image-link"><img src="Resources/Images/Untitled-3.png" alt="dancreates logo"
+                        id="header-img-black" /></a>
+                <button id="image-button-black"><img src="https://i.ibb.co/yfM3fdZ/dropdown-menu-black.png"
+                        alt="Dropdown Menu" id="dropdown-button-black" /></button>
+            </div>
+
+            <div id="responsive-nav-bar">
+                <ul>
+                    <li class="nav-link" id="responsive-home-item"><a href="#hero-header" class="responsive-menu-link">
+                            Home </a></li>
+                    <li class="nav-link" id="responsive-features-item"><a href="CommercialWork.html"
+                            class="responsive-menu-link"> Work </a></li>
+                    <li class="nav-link" id="responsive-products-item"><a href="Contact.html"
+                            class="responsive-menu-link"> Contact </a></li>
+                    <li class="nav-link" id="responsive-media-item"><a href="videos.html"
+                            class="responsive-menu-link"> Media </a></li>
+                    <li class="nav-link" id="responsive-pricing-item"><a href="#prices-section-container"
+                            class="responsive-menu-link"> Pricing </a>
+                    <li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <body>
+
+            <h3>Contact Form</h3>
+            <div class='grid-container'>
+                <div class="formcontainer">
+                    <form action="https://formsubmit.co/dhanssen90@gmail.com" method='POST'>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </body>
     </main>
 
-    <footer>
-
-    </footer>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="Resources\js\jquery.js"></script>
 
 </html>

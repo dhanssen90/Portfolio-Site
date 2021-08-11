@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -7,21 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dan Creates</title>
     <link rel="shortcut icon" type="image/png" href="/Resources/Images/Fav/favicon-32x32.png" />
-    <link rel='Normalize' href="Resources/Normalize.css">
-    <link rel="stylesheet" href="Resources/styleguide.css">
+    <link rel='Normalize' href="Resources\css\Normalize.css">
+    <link rel="stylesheet" href="Resources\css\responsive.css">
+
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img class="logo" src="Resources/Images/Untitled-3.png" alt="Dan Creates"></a>
-            <ul>
-                <li><a href='work.html'> Work</a></li>
-                <li><a href='../Portfolio2/Contact.html'> Contact</a> </li>
-                <li><a href='packages.html'> Packages</a></li>
-            </ul>
-        </nav>
+
+
+    <header id="header">
+
+        <div id="normal-header">
+            <a href="Index.html" id="image-link"><img src="Resources/Images/Untitled-3.png" alt="dancreates logo"
+                    id="header-img" /></a>
+
+            <nav id="nav-bar">
+                <ul>
+                    <li class="nav-link" id="menu-item"><a href="CommercialWork.html" class="menu-link"> Work </a></li>
+                    <li class="nav-link" id="menu-item"><a href="Contact.html" class="menu-link"> Contact </a>
+                    </li>
+                    <li class="nav-link" id="menu-item"><a href="#presentation-container" class="menu-link"> Products
+                        </a></li>
+                    <li class="nav-link" id="menu-item"><a href="videos.html" class="menu-link"> Media </a>
+                    </li>
+                    <li class="nav-link" id="menu-item"><a href="#prices-section-container" class="menu-link"> Pricing
+                        </a>
+                    <li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div id="responsive-header">
+            <div id="responsive-logo-button">
+                <a href="Index.html" id="image-link"><img src="Resources/Images/Untitled-3.png" alt="dancreates logo"
+                        id="header-img-black" /></a>
+                <button id="image-button-black"><img src="https://i.ibb.co/yfM3fdZ/dropdown-menu-black.png"
+                        alt="Dropdown Menu" id="dropdown-button-black" /></button>
+            </div>
+
+            <div id="responsive-nav-bar">
+                <ul>
+                    <li class="nav-link" id="responsive-home-item"><a href="#hero-header" class="responsive-menu-link">
+                            Home </a></li>
+                    <li class="nav-link" id="responsive-features-item"><a href="CommercialWork.html"
+                            class="responsive-menu-link"> Work </a></li>
+                    <li class="nav-link" id="responsive-products-item"><a href="Contact.html"
+                            class="responsive-menu-link"> Contact </a></li>
+                    <li class="nav-link" id="responsive-media-item"><a href="videos.html" class="responsive-menu-link">
+                            Media </a></li>
+                    <li class="nav-link" id="responsive-pricing-item"><a href="#prices-section-container"
+                            class="responsive-menu-link"> Pricing </a>
+                    <li>
+                </ul>
+            </div>
+        </div>
+
     </header>
+
     <div class=margin2>
 
     </div>
@@ -40,10 +84,10 @@
                             width=500px>
                     </a>
                     <a href='livemusic.html'>
-                    <img class='Imagee' src="Resources/Images/Teskey--18.jpg" alt="Josh Teskey" width='500px'>
+                        <img class='Imagee' src="Resources/Images/Teskey--18.jpg" alt="Josh Teskey" width='500px'>
                     </a>
-                    <a href='portraits'>
-                    <img class='Imagee' src="resources/Images/Nic-5334.jpg" alt='Portrait of Friend' width='500px'>
+                    <a href='portraits.html'>
+                        <img class='Imagee' src="resources/Images/Nic-5334.jpg" alt='Portrait of Friend' width='500px'>
                     </a>
                     <a href='videos.html'></a>
                     <img class='Imagee' src="Resources/Images/PITP--3.jpg" alt="Here is where another image will go."
@@ -87,11 +131,16 @@
     </main>
 
     <footer>
-        <p> This is where my footer info is going, this will be added later.</p>
+        <p> Work by Danthegigman follow some of my live music work here ---> <a href='http://instagram.com/danthegigman' target='_blank'> <img src="Resources/Images/instagram_logo_icon_173070.png" height="25px"></a></p>
     </footer>
 
-<script src='Resources/JS/scripts.js'></script>
-
 </body>
+
+
+<!-- JavaScript/jQuery -->
+
+<script src='Resources/JS/scripts.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="Resources\js\jquery.js"></script>
 
 </html>
