@@ -193,14 +193,6 @@ html {
       background-color: inherit;
       padding: 2%;
     }
-
-    /* Footer Section */
-  
-    footer {
-      margin-top: 10%;
-      display: grid;
-      grid-column-start: 2;
-    }
   
   }
 
@@ -401,15 +393,10 @@ li:hover  {
 /*Footer*/
 
 .footer{
-  display:inline;
-  position: relative;
-  max-width: 500px;
-  height:20px;
-  width:100%;
-  margin: auto;
-  padding:10px;
+  display: contents;
+  align-content: center;
   text-align: center;
-  }
+}
 
 /*Image specifications*/
 
