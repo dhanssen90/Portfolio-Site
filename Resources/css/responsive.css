@@ -392,9 +392,8 @@ li:hover  {
 
 /*Footer*/
 
-.footer{
-  display: contents;
-  align-content: center;
+.footertext{
+  font-size:smaller;
   text-align: center;
 }
 
@@ -508,6 +507,23 @@ margin-bottom:100px;
              max-width: 50%;
             }
           
+}
+
+@media only screen and (min-width : 300px) and (max-width : 780px) {
+  #instalogo{
+  max-width: 5%;
+  }
+  .Portrait-Image{
+  max-width: 30%;
+  }
+
+  .Imagee{
+    max-width: 75%;
+  }
+
+  .main{
+    max-width: 80%;
+  }
 }
 
 /* Image galleries for the alternative pages */
