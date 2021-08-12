@@ -4,6 +4,90 @@
 html {
     scroll-behavior: smooth;
   }
+
+/* Global Defaults non-test page*/
+
+body{ background-color: #F0A202;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+  position:relative;
+}
+
+header{
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  border: 3px none;
+  border-radius: 1em;
+  background-color: #F18805;
+}
+
+.grid-container{
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+}
+
+.gallery-container{
+position: relative;
+display: grid;
+grid-template-rows: auto;
+grid-template-columns: 1fr 2fr 1fr;
+gap: 10px;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Fredoka One', cursive;
+  color: #0E9594 ;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size:3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+/* Navigation Bar */
+
+li{
+  display: block;
+
+  margin-left: 20px;
+}
+
+li:hover  {
+  background-color: #0E9594;
+}
+
+.header{
+  justify-content: center;
+}
+/* ~~Format & Layout~~ */
+
+/*Grid Rules*/
+
+.image-center{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  grid-column-start: 2;
+}
+
+.sub-head{
+  grid-area: 'header';
+  grid-column-start: 2;
+}
     
     /* font-size: 18px; */
   
@@ -193,7 +277,6 @@ html {
       background-color: inherit;
       padding: 2%;
     }
-  
   }
 
   @media only screen and (min-width : 860px) and (max-width : 1280px) {
@@ -279,81 +362,7 @@ html {
   }
 
 
-/* Global Defaults non-test page*/
 
-body{ background-color: #F0A202;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    line-height: 1.5;
-    position:relative;
-}
-
-header{
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 500;
-    border: 3px none;
-    border-radius: 1em;
-    background-color: #F18805;
-}
-
-.grid-container{
-    position: relative;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 10px;
-}
-
-h1,h2,h3,h4,h5{
-    font-family: 'Fredoka One', cursive;
-    color: #0E9594 ;
-}
-
-h1{
-    font-size: 4rem;
-}
-
-h2{
-    font-size:3rem;
-}
-
-h3{
-    font-size: 2rem;
-}
-
-/* Navigation Bar */
-
-li{
-    display: block;
-
-    margin-left: 20px;
-  }
-
-li:hover  {
-    background-color: #0E9594;
-}
-
-.header{
-    justify-content: center;
-}
-/* ~~Format & Layout~~ */
-
-/*Grid Rules*/
-
-.image-center{
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    grid-column-start: 2;
-}
-
-.sub-head{
-    grid-area: 'header';
-    grid-column-start: 2;
-}
 /* Parallax */
 
 .parallax{
@@ -476,6 +485,13 @@ margin-bottom:100px;
         flex: 100%;
         max-width: 100%; 
         }
+        .gallery-container{
+          position: relative;
+          display: grid;
+          grid-template-rows: auto;
+          grid-template-columns:1fr;
+          gap: 10px;
+        }
 }
 
 /*Screen larger than 800px*/
@@ -506,8 +522,8 @@ margin-bottom:100px;
             flex: 50%;
              max-width: 50%;
             }
+    }
           
-}
 
 @media only screen and (min-width : 300px) and (max-width : 780px) {
   #instalogo{

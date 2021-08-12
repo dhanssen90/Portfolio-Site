@@ -10,6 +10,7 @@
     <link rel='Normalize' href="Resources\css\Normalize.css">
     <link rel="stylesheet" href="Resources\css\responsive.css">
     <link rel='stylesheet' href="Resources\css\simple-lightbox.css">
+    <link rel="stylesheet" href="mklb/css/mklb.css">
 </head>
 
 <body>
@@ -52,8 +53,8 @@
                             class="responsive-menu-link"> Work </a></li>
                     <li class="nav-link" id="responsive-products-item"><a href="Contact.html"
                             class="responsive-menu-link"> Contact </a></li>
-                    <li class="nav-link" id="responsive-media-item"><a href="videos.html"
-                            class="responsive-menu-link"> Media </a></li>
+                    <li class="nav-link" id="responsive-media-item"><a href="videos.html" class="responsive-menu-link">
+                            Media </a></li>
                     <li class="nav-link" id="responsive-pricing-item"><a href="#prices-section-container"
                             class="responsive-menu-link"> Pricing </a>
                     <li>
@@ -63,69 +64,57 @@
 
     </header>
     <main>
-        <div class='gallery'>
-            <div class='row'>
-                <div class='column'>
-                    <a href="Resources/Images/Live Music/Jacklin-5882.jpg">
-                        <img src="Resources/Images/Live Music/Jacklin-5882-thumbnail.jpg" alt="Julia Jacklin @ the zoo">
-                    </a>
-                    <a href="Resources/Images/Live Music/PITP--3.jpg">
-                        <img class='galleryLM' src="Resources/Images/Live Music/PITP--3-thumbnail.jpg" alt='Matt Corby'>
-                    </a>
-                    <a href='Resources/Images/Live Music/PITP-2687.jpg'>
-                        <img class='galleryLM' src='Resources/Images/Live Music/PITP-2687-thumbnail.jpg'
-                            alt="Party in the Paddock">
-                    </a>
-                    <a href='Resources/Images/Live Music/PITP-2800.jpg'>
-                        <img class='galleryLM' src="Resources/Images/Live Music/PITP-2800-thumbnail.jpg" alt="Briggs">
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="Resources/Images/Live Music/PITP-3311.jpg">
-                        <img class='galleryLM' src="Resources/Images/Live Music/PITP-3311-thumbnail.jpg">
-                    </a>
-                    <a href="Resources/Images/Live Music/PITP-3987.jpg">
-                        <img class='galleryLM' src="Resources/Images/Live Music/PITP-3987-thumbnail.jpg" alt="">
-                    </a>
-                    <a href="Resources/Images/Live Music/PITP-4420.jpg">
-                        <img class='galleryLM' src="Resources/Images/Live Music/PITP-4420-thumbnail.jpg">
-                    </a>
-                    <a href="Resources/Images/Live Music/PITP-4888.jpg">
-                        <img class='galleryLM' src="Resources/Images/Live Music/PITP-4888-thumbnail.jpg">
-                    </a>
-                    <a href="Resources/Images/Live Music/PITP-57.jpg">
-                        <img class='galleryLM' src="Resources/Images/Live Music/PITP-57-thumbnail.jpg">
-                    </a>
-                </div>
-                <div class="column">
-                    <a href="Resources/Images/Live Music/Unify_2020_SouthGipps-0058.jpg">
-                        <img class='galleryLM'
-                            src="Resources/Images/Live Music/Unify_2020_SouthGipps-0058-thumbnail.jpg">
-                    </a>
-                    <a href="Resources/Images/Live Music/Unify_2020_SouthGipps-0380.jpg">
-                        <img class='galleryLM'
-                            src="Resources/Images/Live Music/Unify_2020_SouthGipps-0380-thumbnail.jpg">
-                    </a>
-                    <a href="Resources/Images/Live Music/Unify_2020_SouthGipps-1420.jpg">
-                        <img class='galleryLM'
-                            src="Resources/Images/Live Music/Unify_2020_SouthGipps-1420-thumbnail.jpg">
-                    </a>
-                    <a href="Resources/Images/Live Music/Unify_2020_SouthGipps-2-38.jpg">
-                        <img class='galleryLM'
-                            src="Resources/Images/Live Music/Unify_2020_SouthGipps-2-38-thumbnail.jpg">
-                    </a>
-                    <a href="Resources/Images/Live Music/Unify_2020_SouthGipps-9534.jpg">
-                        <img class='galleryLM'
-                            src="Resources/Images/Live Music/Unify_2020_SouthGipps-9534-thumbnail.jpg">
-                    </a>
+        <div class='gallery-container'>
+            <div class='gallery'>
+                <div class='row'>
+                    <div class='column'>
+
+                        <a class="mklbItem" href="Resources/video/Clare/0S1A8934.mp4">
+                            <video width='100%' preload='true' autoplay='autoplay' loop='loop' muted>
+                                <source src="Resources/video/Clare/0S1A8934_1.mp4">
+                                You browser does not support this tag.
+                            </video>
+                        </a>
+
+                        <a href="Resources/video/East/EoETeaser1.mp4">
+                            <video width="100%" preload="true" autoplay="autoplay" loop="loop" muted>
+                                <source src="Resources/video/East/EoETeaser1.mp4">
+                                You browser does not support this tag.
+                            </video>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="Resources/video/East/EoETeaser2.mp4">
+                            <video width='100%' preload="true" autoplay='autoplay' loop='loop' muted>
+                                <source src="Resources/video/East/EoETeaser2.mp4">
+                                You browser does not support this tag.
+                            </video>
+                        </a>
+                        <a href="Resources/video/East/EoEBrandVid.mp4">
+                            <video width="100%" preload="true" autoplay='autoplay' loop='loop' muted>
+                                <source src="Resources/video/East/east-thumb2.mp4">
+                        </a>
+                    </div>
+
+                    <div class="column">
+                        <a href="Resources/video/kingdom/Kingdom_poles_1.mp4">
+                            <video width="100%" preload="true" autoplay='autoplay' loop = 'loop' muted>
+                                <source src="Resources/video/kingdom/C0003_2.mp4">
+                        </a>
+                        <a href= "Resources/video/kingdom/C0003_2.mp4">
+                            <video width="100%" preload="true" autoplay='autoplay' loop='loop' muted>
+                                <source src="Resources/video/kingdom/C0003_2.mp4">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-
     </main>
-    
+
     <footer>
-        <p class='footertext'> Work by Danthegigman follow some of my live music work here ---> <a href='http://instagram.com/danthegigman' target='_blank'> <img id='instalogo' src="Resources/Images/instagram_logo_icon_173070.png" height="25px"></a></p>
+        <p class='footertext'> Work by Danthegigman follow some of my live music work here ---> <a
+                href='http://instagram.com/danthegigman' target='_blank'> <img id='instalogo'
+                    src="Resources/Images/instagram_logo_icon_173070.png" height="25px"></a></p>
     </footer>
 
     <script src="Resources/JS/simple-lightbox.js"></script>
