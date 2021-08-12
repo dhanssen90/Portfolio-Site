@@ -29,7 +29,7 @@ header{
   position: relative;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 15% 70% 15%;
   gap: 10px;
 }
 
@@ -37,7 +37,7 @@ header{
 position: relative;
 display: grid;
 grid-template-rows: auto;
-grid-template-columns: 1fr 2fr 1fr;
+grid-template-columns: 15% 70% 15%;
 gap: 10px;
 }
 
